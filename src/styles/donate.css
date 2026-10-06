@@ -1,0 +1,840 @@
+/* ==========================================
+   GLOBAL
+========================================== */
+
+.donate-page {
+  background: beige;
+  color: black;
+  min-height: 100vh;
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.donate-hero {
+  min-height: 600px;
+  padding: 100px 10%;
+  display: flex;
+  align-items: center;
+  background: beige;
+}
+
+.donate-hero-content {
+  max-width: 850px;
+}
+
+.donate-tag {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #1b5e20;
+  margin-bottom: 20px;
+}
+
+.donate-hero h1 {
+  font-size: 5rem;
+  line-height: 1.05;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+.donate-hero h1 span {
+  color: #1b5e20;
+}
+
+.donate-hero p {
+  max-width: 650px;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: black;
+  margin-bottom: 35px;
+}
+
+.donate-hero-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #1b5e20;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.donate-hero-button:hover {
+  background: #144918;
+}
+
+
+/* ==========================================
+   WHY DONATE
+========================================== */
+
+.why-donate {
+  padding: 100px 10%;
+  background: beige;
+}
+
+.section-heading {
+  max-width: 750px;
+  margin-bottom: 60px;
+}
+
+.section-heading > span {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #1b5e20;
+  margin-bottom: 15px;
+}
+
+.section-heading h2 {
+  font-size: 3rem;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.section-heading p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: black;
+  max-width: 650px;
+}
+
+.impact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.impact-card {
+  padding: 35px;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  background: white;
+}
+
+.impact-number {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #1b5e20;
+  margin-bottom: 35px;
+}
+
+.impact-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.impact-card p {
+  color: black;
+  line-height: 1.7;
+}
+
+
+/* ==========================================
+   DONATION SECTION
+========================================== */
+
+.donation-section {
+  padding: 100px 8%;
+  background: beige;
+}
+
+.donation-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.donation-intro {
+  position: sticky;
+  top: 40px;
+}
+
+.donation-intro h2 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.donation-intro > p {
+  color: black;
+  line-height: 1.8;
+  max-width: 480px;
+}
+
+.donation-note {
+  margin-top: 40px;
+  padding: 25px;
+  border-left: 4px solid #1b5e20;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.donation-note strong {
+  color: #1b5e20;
+}
+
+.donation-note span {
+  color: black;
+  line-height: 1.6;
+}
+
+
+/* ==========================================
+   DONATION CARD
+========================================== */
+
+.donation-card {
+  background: white;
+  border-radius: 16px;
+  padding: 45px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ==========================================
+   FORM SECTION TITLES
+========================================== */
+
+.donation-section-title {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.donation-section-title:not(:first-child) {
+  margin-top: 50px;
+}
+
+.donation-section-title > span {
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  border-radius: 50%;
+  background: #1b5e20;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.donation-section-title h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.donation-section-title p {
+  color: black;
+  font-size: 0.9rem;
+}
+
+
+/* ==========================================
+   FORM GRID
+========================================== */
+
+.donation-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+
+/* ==========================================
+   FORM GROUP
+========================================== */
+
+.donation-form-group {
+  margin-bottom: 22px;
+}
+
+.donation-form-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.donation-form-group label span {
+  color: #c62828;
+}
+
+.donation-form-group input,
+.donation-form-group textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  padding: 14px 16px;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.donation-form-group input:focus,
+.donation-form-group textarea:focus {
+  border-color: #1b5e20;
+  background: white;
+}
+
+.donation-form-group textarea {
+  resize: vertical;
+}
+
+.donation-form-group small {
+  display: block;
+  margin-top: 7px;
+  color: black;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+
+/* ==========================================
+   AMOUNT BUTTONS
+========================================== */
+
+.amount-options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.amount-button {
+  padding: 14px 10px;
+  background: white;
+  border: 1px solid #d7d7d7;
+  border-radius: 7px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.amount-button:hover {
+  border-color: #1b5e20;
+}
+
+.amount-button.active {
+  background: #1b5e20;
+  color: white;
+  border-color: #1b5e20;
+}
+
+
+/* ==========================================
+   CUSTOM AMOUNT
+========================================== */
+
+.custom-amount {
+  margin-bottom: 10px;
+}
+
+.amount-input-wrapper {
+  position: relative;
+}
+
+.amount-input-wrapper > span {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+  color: black;
+}
+
+.amount-input-wrapper input {
+  padding-left: 35px;
+}
+
+
+/* ==========================================
+   PAYMENT METHODS
+========================================== */
+
+.payment-methods {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.2s ease;
+}
+
+.payment-method:hover {
+  border-color: #1b5e20;
+}
+
+.payment-method.active {
+  border-color: #1b5e20;
+  background: #f2f8f2;
+}
+
+.payment-method strong {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.payment-method small {
+  display: block;
+  color: #888;
+  margin-top: 3px;
+  font-size: 0.7rem;
+}
+
+.payment-logo {
+  width: 35px;
+  height: 35px;
+  min-width: 35px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+.bkash-logo {
+  background: #e2136e;
+  color: white;
+}
+
+.zelle-logo {
+  background: #6d1ed4;
+  color: white;
+}
+
+.paypal-logo {
+  background: #003087;
+  color: white;
+}
+
+
+/* ==========================================
+   PAYMENT INSTRUCTIONS
+========================================== */
+
+.payment-instructions {
+  background: #f6f6f2;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.payment-instruction-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.payment-instruction-header h4 {
+  font-size: 1rem;
+}
+
+.payment-instruction-header span {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #1b5e20;
+}
+
+
+/* ==========================================
+   PAYMENT DETAILS
+========================================== */
+
+.payment-detail p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.payment-value {
+  display: block;
+  font-size: 1.25rem;
+  color: #1b5e20;
+  margin-bottom: 12px;
+  word-break: break-word;
+}
+
+.payment-help {
+  line-height: 1.6;
+  font-size: 0.8rem !important;
+  color: #888 !important;
+}
+
+
+/* ==========================================
+   QR CODE LAYOUT
+========================================== */
+
+.payment-method-content {
+  width: 100%;
+}
+
+.payment-with-qr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.payment-qr {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment-qr img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  background: white;
+  border-radius: 8px;
+  padding: 6px;
+  border: 1px solid #e2e2e2;
+}
+
+.payment-qr span {
+  margin-top: 7px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #1b5e20;
+}
+
+
+/* ==========================================
+   TRANSACTION ID
+========================================== */
+
+.transaction-box {
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e2e2;
+}
+
+.transaction-box-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 7px;
+}
+
+.transaction-box-header span {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #1b5e20;
+}
+
+.transaction-box-header strong {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: black;
+}
+
+.transaction-box > p {
+  margin: 0 0 12px;
+  color: #666;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.transaction-box input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  padding: 13px 15px;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: black;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.transaction-box input::placeholder {
+  color: #999;
+}
+
+.transaction-box input:focus {
+  border-color: #1b5e20;
+  background: white;
+}
+
+
+/* ==========================================
+   PAYPAL BUTTON
+========================================== */
+
+.paypal-button {
+  display: inline-block;
+  margin: 8px 0 15px;
+  padding: 12px 20px;
+  background: #003087;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.paypal-button:hover {
+  background: #002366;
+}
+
+
+/* ==========================================
+   SUBMIT BUTTON
+========================================== */
+
+.donation-submit {
+  width: 100%;
+  padding: 17px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #1b5e20;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.donation-submit:hover {
+  background: #144918;
+}
+
+.donation-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.donation-form-note {
+  text-align: center;
+  margin-top: 15px;
+  color: #888;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+
+/* ==========================================
+   SUCCESS MESSAGE
+========================================== */
+
+.donation-success {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.success-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  background: #1b5e20;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.donation-success h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.donation-success p {
+  max-width: 450px;
+  margin: 0 auto 30px;
+  color: black;
+  line-height: 1.7;
+}
+
+.donation-success button {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 7px;
+  background: #1b5e20;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+/* ==========================================
+   FINAL CTA
+========================================== */
+
+.donate-final {
+  padding: 120px 10%;
+  background: #1b5e20;
+  color: white;
+  text-align: center;
+}
+
+.donate-final > span {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.donate-final h2 {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin: 25px 0;
+}
+
+.donate-final p {
+  font-size: 1.05rem;
+  margin-bottom: 30px;
+  opacity: 0.85;
+}
+
+.final-donate-button {
+  display: inline-block;
+  padding: 14px 28px;
+  background: white;
+  color: #1b5e20;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: 700;
+}
+
+.final-donate-button:hover {
+  background: #f1f1f1;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1000px) {
+
+  .donate-hero h1 {
+    font-size: 4rem;
+  }
+
+  .donation-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .donation-intro {
+    position: static;
+  }
+
+  .impact-cards {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .donate-hero {
+    min-height: auto;
+    padding: 80px 7%;
+  }
+
+  .donate-hero h1 {
+    font-size: 3rem;
+  }
+
+  .donate-hero p {
+    font-size: 1rem;
+  }
+
+  .why-donate {
+    padding: 70px 7%;
+  }
+
+  .section-heading h2 {
+    font-size: 2.3rem;
+  }
+
+  .donation-section {
+    padding: 70px 5%;
+  }
+
+  .donation-card {
+    padding: 25px 20px;
+  }
+
+  .donation-intro h2 {
+    font-size: 2.7rem;
+  }
+
+  .donation-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .amount-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .payment-methods {
+    grid-template-columns: 1fr;
+  }
+
+  /* QR becomes slightly smaller on phones */
+
+  .payment-with-qr {
+    gap: 15px;
+  }
+
+  .payment-qr img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .payment-qr span {
+    font-size: 0.65rem;
+  }
+
+  .donate-final {
+    padding: 80px 7%;
+  }
+
+  .donate-final h2 {
+    font-size: 2.7rem;
+  }
+
+}

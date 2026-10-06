@@ -1,0 +1,266 @@
+/* =========================
+   Project Page
+========================= */
+
+.project-page {
+  width: 100%;
+  background: beige;
+  color: black;
+}
+
+
+/* =========================
+   Introduction
+========================= */
+
+.project-intro {
+  padding: 110px 8% 90px;
+  text-align: center;
+  background: beige;
+}
+
+.project-intro-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-label {
+  display: inline-block;
+  margin-bottom: 18px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #0f766e;
+}
+
+.project-intro h1 {
+  margin-bottom: 25px;
+  font-size: 3.5rem;
+  color: black;
+}
+
+.project-intro p {
+  max-width: 780px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: black;
+}
+
+
+/* =========================
+   Story Sections
+========================= */
+
+.story-section {
+  min-height: 600px;
+  padding: 80px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  background: beige;
+}
+
+.story-section:nth-of-type(even) {
+  background: beige;
+}
+
+
+/* Reverse image/text */
+
+.story-reverse {
+  direction: rtl;
+}
+
+.story-reverse .story-content,
+.story-reverse .story-image {
+  direction: ltr;
+}
+
+
+/* =========================
+   Images
+========================= */
+
+.story-image {
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* =========================
+   Story Content
+========================= */
+
+.story-content {
+  max-width: 600px;
+}
+
+.story-number {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #0f766e;
+}
+
+.story-content h2,
+.project-impact h2 {
+  margin-bottom: 25px;
+  font-size: 2.5rem;
+  color: black;
+}
+
+.story-content p,
+.project-impact p {
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: black;
+}
+
+
+/* =========================
+   Impact Section
+========================= */
+
+.project-impact {
+  padding: 100px 8%;
+  text-align: center;
+  background: beige;
+  color: white;
+}
+
+.impact-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project-impact .story-number {
+  color: green;
+}
+
+.project-impact h2 {
+  color: black;
+}
+
+.project-impact p {
+  max-width: 750px;
+  margin: 0 auto 50px;
+  color: black;
+}
+
+.impact-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.impact-stats div {
+  padding: 25px;
+  border: 1px solid(255, 255, 255, 0.3);
+}
+
+.impact-stats strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 2.5rem;
+  color: green;
+}
+
+.impact-stats span {
+  font-size: 0.95rem;
+  color: green;
+}
+
+
+/* =========================
+   Final Section
+========================= */
+
+.final-story {
+  padding-bottom: 120px;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 900px) {
+  .project-intro h1 {
+    font-size: 2.8rem;
+  }
+
+  .story-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 70px 6%;
+  }
+
+  .story-reverse {
+    direction: ltr;
+  }
+
+  .story-image {
+    height: 400px;
+  }
+
+  .story-content {
+    max-width: 100%;
+  }
+
+  .impact-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .project-intro {
+    padding: 80px 20px 60px;
+  }
+
+  .project-intro h1 {
+    font-size: 2.3rem;
+  }
+
+  .project-intro p {
+    font-size: 1rem;
+  }
+
+  .story-section {
+    padding: 55px 20px;
+  }
+
+  .story-image {
+    height: 300px;
+  }
+
+  .story-content h2,
+  .project-impact h2 {
+    font-size: 2rem;
+  }
+
+  .story-content p,
+  .project-impact p {
+    font-size: 1rem;
+  }
+
+  .project-impact {
+    padding: 70px 20px;
+  }
+}

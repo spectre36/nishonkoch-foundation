@@ -1,0 +1,180 @@
+/* ==========================================
+   NAVBAR
+========================================== */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 10px 3%;
+  background: beige;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 1000;
+}
+
+/* ==========================================
+   LOGO + FOUNDATION NAME
+========================================== */
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: black;
+}
+
+.foundation-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px !important;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: black;
+  white-space: nowrap;
+}
+
+.logo {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* ==========================================
+   MAIN NAVIGATION
+========================================== */
+
+nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #2563eb;
+}
+
+/* ==========================================
+   DROPDOWN
+========================================== */
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 140px;
+  margin: 0;
+  padding: 5px 0;
+  list-style: none;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: all 0.2s ease;
+  z-index: 999;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu li {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-menu li a:hover {
+  background: #f5f7fb;
+  color: #2563eb;
+}
+
+/* ==========================================
+   RESPONSIVE SPACING
+========================================== */
+
+@media (max-width: 1400px) {
+  nav {
+    gap: 25px;
+  }
+
+  nav > ul {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 1100px) {
+  nav {
+    gap: 20px;
+  }
+
+  nav > ul {
+    gap: 14px;
+  }
+
+  .logo {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  nav > ul {
+    justify-content: center;
+    flex: none;
+    gap: 15px;
+  }
+
+  .logo {
+    width: 90px;
+    height: 90px;
+  }
+}

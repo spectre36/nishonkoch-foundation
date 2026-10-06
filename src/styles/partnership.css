@@ -1,0 +1,564 @@
+/* ==========================================
+   PARTNERSHIP PAGE
+========================================== */
+
+.partnership-page {
+  background: beige;
+  color: #17351f;
+  overflow: hidden;
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.partnership-hero {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  padding: 90px 8%;
+  background: beige;
+}
+
+.partnership-hero-content {
+  max-width: 850px;
+}
+
+.partnership-tag {
+  display: inline-block;
+  margin-bottom: 22px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #1b5e20;
+}
+
+.partnership-hero h1 {
+  margin: 0;
+  font-size: clamp(54px, 7vw, 92px);
+  line-height: 0.98;
+  font-weight: 700;
+  letter-spacing: -3px;
+}
+
+.partnership-hero h1 span {
+  color: #1b5e20;
+}
+
+.partnership-hero p {
+  max-width: 650px;
+  margin: 32px 0;
+  font-size: 18px;
+  line-height: 1.7;
+  color: black;
+}
+
+.partnership-hero-button {
+  display: inline-block;
+  padding: 14px 25px;
+  background: #17351f;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.partnership-hero-button:hover {
+  background: #1b5e20;
+  transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   WHY PARTNER
+========================================== */
+
+.why-partner {
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 8%;
+  background: beige;
+}
+
+.partnership-section-heading {
+  max-width: 750px;
+  margin-bottom: 60px;
+}
+
+.partnership-section-heading > span {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #1b5e20;
+}
+
+.partnership-section-heading h2 {
+  margin: 0 0 22px;
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+.partnership-section-heading h2 span {
+  color: #1b5e20;
+}
+
+.partnership-section-heading p {
+  max-width: 650px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.7;
+  color: black;
+}
+
+
+/* ==========================================
+   BENEFITS
+========================================== */
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.benefit-card {
+  padding: 30px 26px;
+  background: white;
+  border: 1px solid rgba(23, 53, 31, 0.1);
+  min-height: 220px;
+  transition: 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(23, 53, 31, 0.08);
+}
+
+.benefit-number {
+  display: block;
+  margin-bottom: 38px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1b5e20;
+}
+
+.benefit-card h3 {
+  margin: 0 0 12px;
+  font-size: 21px;
+  line-height: 1.2;
+}
+
+.benefit-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: black;
+}
+
+
+/* ==========================================
+   COLLABORATION SECTION
+========================================== */
+
+.collaboration-section {
+  padding: 100px 8%;
+  background: beige;
+}
+
+.collaboration-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.collaboration-heading h2 {
+  margin: 0;
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+.collaboration-heading h2 span {
+  color: #1b5e20;
+}
+
+.collaboration-heading p {
+  max-width: 450px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #5f6b62;
+}
+
+.collaboration-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.collaboration-card {
+  padding: 32px;
+  min-height: 220px;
+  background: #f5f1e6;
+  border: 1px solid rgba(23, 53, 31, 0.1);
+  transition: 0.3s ease;
+}
+
+.collaboration-card:hover {
+  transform: translateY(-5px);
+  background: #f1ecdf;
+}
+
+.collaboration-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.collaboration-number {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1b5e20;
+}
+
+.collaboration-arrow {
+  font-size: 22px;
+  color: #1b5e20;
+}
+
+.collaboration-card h3 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+.collaboration-card p {
+  max-width: 500px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #657067;
+}
+
+
+/* ==========================================
+   PURPOSE
+========================================== */
+
+.purpose-section {
+  padding: 110px 8%;
+  background: #17351f;
+  color: white;
+}
+
+.purpose-content {
+  max-width: 800px;
+}
+
+.purpose-content > span {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #c8d4c8;
+}
+
+.purpose-content h2 {
+  margin: 0 0 25px;
+  font-size: clamp(40px, 5vw, 66px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+.purpose-content h2 span {
+  color: #b7cdb8;
+}
+
+.purpose-content p {
+  max-width: 650px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #d5ded6;
+}
+
+
+/* ==========================================
+   CONTACT
+========================================== */
+
+.partnership-contact {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  padding: 110px 8%;
+  background: beige;
+}
+
+.contact-content {
+  max-width: 850px;
+}
+
+.contact-content > span {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #1b5e20;
+}
+
+.contact-content h2 {
+  margin: 0 0 25px;
+  font-size: clamp(44px, 6vw, 72px);
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.contact-content h2 span {
+  color: #1b5e20;
+}
+
+.contact-content > p {
+  max-width: 620px;
+  margin: 0 0 35px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: black;
+}
+
+
+/* ==========================================
+   EMAIL DISPLAY
+========================================== */
+
+.email-box {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 22px 28px;
+  background: white;
+  border-left: 4px solid #1b5e20;
+}
+
+.email-box > span:first-child {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: black;
+}
+
+.email-address {
+  color: rgb(27, 112, 27);
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contact-content .email-note {
+  max-width: 600px;
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: black;
+}
+
+
+/* ==========================================
+   PARTNERS COLLAGE / FINAL CTA
+========================================== */
+
+.partners-collage {
+  padding: 70px 8% 80px;
+  background: beige;
+  overflow: hidden;
+}
+
+.collage-image {
+  position: relative;
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.collage-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* SUBTLE OVERLAY */
+
+.collage-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.32);
+  color: white;
+}
+
+.collage-overlay > span {
+  margin-bottom: 18px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.collage-overlay h2 {
+  margin: 0;
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+  font-weight: 700;
+  color: white;
+}
+
+.collage-overlay h2 span {
+  color: #dce8dc;
+}
+
+.collage-overlay p {
+  margin: 22px 0 0;
+  font-size: 17px;
+  line-height: 1.5;
+  color: white;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1000px) {
+
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .collaboration-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .partnership-hero,
+  .why-partner,
+  .collaboration-section,
+  .purpose-section,
+  .partnership-contact {
+    padding: 75px 6%;
+  }
+
+  .partnership-hero {
+    min-height: 540px;
+  }
+
+  .why-partner,
+  .partnership-contact {
+    min-height: auto;
+  }
+
+  .partnership-hero h1 {
+    font-size: 52px;
+    letter-spacing: -2px;
+  }
+
+  .partnership-hero p {
+    font-size: 16px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collaboration-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-card {
+    min-height: auto;
+  }
+
+  .collaboration-card {
+    min-height: auto;
+  }
+
+  /* SMALLER COLLAGE ON MOBILE */
+
+  .partners-collage {
+    padding: 45px 5% 55px;
+  }
+
+  .collage-overlay {
+    padding: 20px;
+  }
+
+  .collage-overlay h2 {
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+
+  .collage-overlay p {
+    font-size: 15px;
+  }
+
+  .email-address {
+    font-size: 18px;
+    word-break: break-word;
+  }
+
+}
+
+
+@media (max-width: 450px) {
+
+  .partnership-hero h1 {
+    font-size: 44px;
+  }
+
+  .partnership-section-heading h2,
+  .collaboration-heading h2,
+  .purpose-content h2,
+  .contact-content h2 {
+    letter-spacing: -1px;
+  }
+
+  .collage-overlay {
+    padding: 15px;
+  }
+
+  .collage-overlay h2 {
+    font-size: 30px;
+  }
+
+  .collage-overlay p {
+    margin-top: 14px;
+    font-size: 13px;
+  }
+
+}

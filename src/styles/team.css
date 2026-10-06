@@ -1,0 +1,361 @@
+/* ==========================================
+   OUR TEAM PAGE
+========================================== */
+
+.team-page {
+  background: beige;
+  color: #17351f;
+  overflow: hidden;
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+
+
+.team-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: #2e6b38;
+  margin-bottom: 18px;
+}
+
+.team-hero h1 {
+  margin: 0;
+  font-size: clamp(44px, 6vw, 72px);
+  line-height: 0.98;
+  letter-spacing: -3px;
+  font-weight: 700;
+  color: #163b20;
+}
+
+.team-hero h1 span {
+  color: #2f713b;
+}
+
+.team-hero p {
+  max-width: 590px;
+  margin: 22px 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: black;
+}
+
+/* ==========================================
+   SECTION HEADINGS
+========================================== */
+
+.team-section-heading {
+  width: min(1180px, 90%);
+  margin: 0 auto 45px;
+}
+
+.team-section-heading > span {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: #2e6b38;
+}
+
+.team-section-heading h2 {
+  margin: 18px 0;
+  font-size: clamp(38px, 5vw, 64px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+  color: #17351f;
+}
+
+.team-section-heading h2 span {
+  color: #397742;
+}
+
+.team-section-heading p {
+  max-width: 650px;
+  color: black;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* ==========================================
+   LEADERSHIP
+========================================== */
+
+.team-leadership {
+  padding: 90px 0;
+  background: beige;
+}
+
+/* ==========================================
+   CEO CARD
+========================================== */
+
+.ceo-card {
+  width: min(1000px, 90%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 0.85fr 1fr;
+  min-height: 400px;
+  background: #f4efe5;
+  overflow: hidden;
+}
+
+/* ==========================================
+   CEO IMAGE
+========================================== */
+
+.ceo-image-area {
+  min-height: 0;
+  aspect-ratio: 1 / 1;
+  padding: 25px;
+  background: #e8e0d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ceo-image-area img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================
+   CEO INFORMATION
+========================================== */
+
+.ceo-information {
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.team-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #397742;
+}
+
+.ceo-information h3 {
+  max-width: 450px;
+  margin: 18px 0;
+  font-size: clamp(30px, 3.5vw, 42px);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+  color: #17351f;
+}
+
+.team-divider {
+  width: 55px;
+  height: 2px;
+  background: #397742;
+  margin: 10px 0 25px;
+}
+
+.ceo-role {
+  margin: 0 0 5px;
+  font-size: 13px;
+  color: black;
+}
+
+.ceo-description {
+  max-width: 480px;
+  margin: 25px 0;
+  line-height: 1.8;
+  font-size: 15px;
+  color: black;
+}
+
+/* ==========================================
+   PLACEHOLDERS
+========================================== */
+
+.team-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 330px;
+  border: 2px dashed rgba(27, 94, 32, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #5d705f;
+}
+
+.team-placeholder span {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.team-placeholder small {
+  margin-top: 10px;
+  line-height: 1.6;
+  color: black;
+}
+
+/* ==========================================
+   DEPARTMENTS
+========================================== */
+
+.departments-section {
+  padding: 100px 0;
+  background: beige;
+}
+
+.departments-grid {
+  width: min(1180px, 90%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* ==========================================
+   DEPARTMENT CARD
+========================================== */
+
+.department-card {
+  min-height: 390px;
+  background: #ffffff;
+  border: 1px solid rgba(23, 53, 31, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: 0.35s ease;
+}
+
+.department-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 18px 45px rgba(24, 52, 31, 0.09);
+}
+
+/* ==========================================
+   DEPARTMENT IMAGE
+========================================== */
+
+.department-image-area {
+  height: 260px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8e0d2;
+}
+
+.department-image-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.department-image-area .team-placeholder {
+  min-height: 0;
+  height: 100%;
+}
+
+/* ==========================================
+   DEPARTMENT INFORMATION
+========================================== */
+
+.department-information {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.department-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.department-number {
+  font-size: 13px;
+  font-weight: 700;
+  color: #c2c9c3;
+}
+
+.department-information h3 {
+  margin: 15px 0;
+  font-size: 23px;
+  line-height: 1.25;
+  color: #23472b;
+}
+
+.department-information p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: black;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+  .ceo-card {
+    grid-template-columns: 1fr;
+  }
+
+  .ceo-image-area {
+    min-height: 350px;
+  }
+
+  .team-placeholder {
+    min-height: 280px;
+  }
+
+  .departments-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .team-hero {
+    min-height: 420px;
+  }
+
+  .team-hero h1 {
+    letter-spacing: -2px;
+  }
+
+  .team-leadership,
+  .departments-section {
+    padding: 70px 0;
+  }
+
+  .ceo-image-area {
+    padding: 20px;
+    min-height: 280px;
+  }
+
+  .ceo-information {
+    padding: 35px 28px;
+  }
+
+  .departments-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .department-card {
+    min-height: 350px;
+  }
+
+  .department-image-area {
+    height: 240px;
+  }
+
+  .department-information {
+    padding: 25px;
+  }
+}

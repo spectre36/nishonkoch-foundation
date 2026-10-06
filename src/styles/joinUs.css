@@ -1,0 +1,445 @@
+/* =========================================
+   JOIN US PAGE
+========================================= */
+
+.join-page {
+  min-height: 100vh;
+  background: beige;
+  padding: 70px 20px;
+}
+
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.membership-card {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  background: #ffffff;
+
+  border-radius: 24px;
+
+  padding: 55px 60px;
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.membership-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.membership-tag {
+  display: inline-block;
+
+  background: #e8f5e9;
+  color: #1b5e20;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  padding: 8px 16px;
+
+  border-radius: 30px;
+
+  margin-bottom: 18px;
+}
+
+.membership-header h1 {
+  font-size: 3rem;
+  color: #1b5e20;
+
+  margin-bottom: 18px;
+
+  font-weight: 800;
+}
+
+.membership-header p {
+  max-width: 620px;
+
+  margin: 0 auto;
+
+  font-size: 1.05rem;
+
+  line-height: 1.7;
+
+  color: black;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.membership-form {
+  width: 100%;
+}
+
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.form-section-title {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  margin-bottom: 25px;
+}
+
+.form-section-title span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  background: #1b5e20;
+
+  color: white;
+
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.form-section-title h2 {
+  margin: 0 0 4px;
+
+  color: black;
+
+  font-size: 1.35rem;
+}
+
+.form-section-title p {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 0.9rem;
+}
+
+.second-section {
+  margin-top: 50px;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.form-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 24px;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  margin-bottom: 24px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+
+/* =========================================
+   LABELS
+========================================= */
+
+.form-group label {
+  font-size: 0.95rem;
+
+  font-weight: 700;
+
+  color: black;
+
+  margin-bottom: 9px;
+}
+
+.form-group label span {
+  color: #e53935;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+
+  border: 2px solid #e1e1e1;
+
+  border-radius: 12px;
+
+  padding: 14px 16px;
+
+  font-family: inherit;
+
+  font-size: 0.95rem;
+
+  color: #222;
+
+  background: #fafafa;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-group input {
+  height: 50px;
+}
+
+.form-group textarea {
+  resize: vertical;
+
+  min-height: 100px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #1b5e20;
+
+  background: #ffffff;
+
+  box-shadow: 0 0 0 4px rgba(27, 94, 32, 0.08);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #aaa;
+}
+
+
+/* =========================================
+   SMALL TEXT
+========================================= */
+
+.form-group small {
+  margin-top: 7px;
+
+  color: #888;
+
+  font-size: 0.8rem;
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.membership-submit {
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 17px 25px;
+
+  border: none;
+
+  border-radius: 13px;
+
+  background: #1b5e20;
+
+  color: white;
+
+  font-family: inherit;
+
+  font-size: 1rem;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.membership-submit:hover {
+  background: #124b17;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(27, 94, 32, 0.2);
+}
+
+.membership-submit:active {
+  transform: translateY(0);
+}
+
+.membership-submit:disabled {
+  opacity: 0.65;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* =========================================
+   FORM NOTE
+========================================= */
+
+.form-note {
+  text-align: center;
+
+  margin: 18px auto 0;
+
+  max-width: 600px;
+
+  color: black;
+
+  font-size: 0.78rem;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   SUCCESS MESSAGE
+========================================= */
+
+.success-message {
+  text-align: center;
+
+  padding: 50px 20px;
+}
+
+.success-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e8f5e9;
+
+  color: #1b5e20;
+
+  font-size: 2rem;
+
+  font-weight: 800;
+}
+
+.success-message h2 {
+  color: #1b5e20;
+
+  font-size: 2rem;
+
+  margin-bottom: 15px;
+}
+
+.success-message p {
+  max-width: 550px;
+
+  margin: 0 auto 25px;
+
+  color: #666;
+
+  line-height: 1.7;
+}
+
+.success-message button {
+  border: none;
+
+  padding: 13px 22px;
+
+  border-radius: 10px;
+
+  background: #1b5e20;
+
+  color: white;
+
+  font-family: inherit;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .join-page {
+    padding: 35px 15px;
+  }
+
+  .membership-card {
+    padding: 35px 22px;
+
+    border-radius: 18px;
+  }
+
+  .membership-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .membership-header p {
+    font-size: 0.95rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .form-section-title {
+    gap: 12px;
+  }
+
+  .form-section-title h2 {
+    font-size: 1.15rem;
+  }
+
+  .form-section-title p {
+    font-size: 0.8rem;
+  }
+
+}
