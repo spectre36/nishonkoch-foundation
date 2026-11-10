@@ -10,14 +10,19 @@ function JoinUs() {
     email: "",
     phone: "",
     dateOfBirth: "",
+    bloodGroup: "",
+    tShirtSize: "",
     address: "",
     occupation: "",
     institution: "",
     skills: "",
+    organizationExperience: "",
+    oneHourImpact: "",
     reason: "",
     bkashTransactionId: "",
     facebook: "",
     instagram: "",
+    reference: "",
   });
 
   const [submitting, setSubmitting] = useState(false);
@@ -52,14 +57,19 @@ function JoinUs() {
         email: "",
         phone: "",
         dateOfBirth: "",
+        bloodGroup: "",
+        tShirtSize: "",
         address: "",
         occupation: "",
         institution: "",
         skills: "",
+        organizationExperience: "",
+        oneHourImpact: "",
         reason: "",
         bkashTransactionId: "",
         facebook: "",
         instagram: "",
+        reference: "",
       });
     } catch (error) {
       console.error(error);
@@ -206,6 +216,85 @@ function JoinUs() {
                   />
                 </div>
 
+                {/* Blood Group */}
+
+                <div className="form-group">
+                  <label htmlFor="bloodGroup">Blood Group</label>
+                  <select
+                    id="bloodGroup"
+                    name="bloodGroup"
+                    value={formData.bloodGroup}
+                    onChange={handleChange}
+                    required
+                  >
+                    <option value="" disabled>e.g. O+</option>
+                    {["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"].map((group) => (
+                      <option key={group} value={group}>{group}</option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* T-Shirt Size */}
+
+                <div className="form-group">
+                  <label htmlFor="tShirtSize">T-Shirt Size</label>
+                  <select
+                    id="tShirtSize"
+                    name="tShirtSize"
+                    value={formData.tShirtSize}
+                    onChange={handleChange}
+                    required
+                  >
+                    <option value="" disabled>e.g. M</option>
+                    {["XS", "S", "M", "L", "XL", "XXL"].map((size) => (
+                      <option key={size} value={size}>{size}</option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Facebook */}
+
+                <div className="form-group">
+                  <label htmlFor="facebook">Facebook Profile</label>
+                  <input
+                    type="url"
+                    id="facebook"
+                    name="facebook"
+                    value={formData.facebook}
+                    onChange={handleChange}
+                    placeholder="Your Facebook profile link"
+                    required
+                  />
+                </div>
+
+                {/* Instagram */}
+
+                <div className="form-group">
+                  <label htmlFor="instagram">Instagram Profile</label>
+                  <input
+                    type="url"
+                    id="instagram"
+                    name="instagram"
+                    value={formData.instagram}
+                    onChange={handleChange}
+                    placeholder="Your Instagram profile link"
+                  />
+                </div>
+
+                {/* Reference */}
+
+                <div className="form-group">
+                  <label htmlFor="reference">Reference</label>
+                  <input
+                    type="text"
+                    id="reference"
+                    name="reference"
+                    value={formData.reference}
+                    onChange={handleChange}
+                    placeholder="Who referred you, Where did you find us?"
+                  />
+                </div>
+
               </div>
 
 
@@ -213,16 +302,16 @@ function JoinUs() {
 
               <div className="form-group full-width">
                 <label htmlFor="address">
-                  Where are you based? 
+                 Address 
                 </label>
 
-                <textarea
+                <input
+                  type="text"
                   id="address"
                   name="address"
                   value={formData.address}
                   onChange={handleChange}
-                  rows="3"
-                  placeholder="Tell us your area or address"
+                  placeholder="Your area or address"
                   required
                 />
               </div>
@@ -232,7 +321,7 @@ function JoinUs() {
 
               <div className="form-group full-width">
                 <label htmlFor="occupation">
-                  What do you do?
+                 Institution
                 </label>
 
                 <input
@@ -241,7 +330,7 @@ function JoinUs() {
                   name="occupation"
                   value={formData.occupation}
                   onChange={handleChange}
-                  placeholder="Student, professional, entrepreneur..."
+                  placeholder="School, College, University, Workplace..."
                 />
               </div>
 
@@ -250,7 +339,7 @@ function JoinUs() {
 
               <div className="form-group full-width">
                 <label htmlFor="institution">
-                  Institution
+                 Present Level of Education
                 </label>
 
                 <input
@@ -259,7 +348,7 @@ function JoinUs() {
                   name="institution"
                   value={formData.institution}
                   onChange={handleChange}
-                  placeholder="School, college, university, workplace..."
+                  placeholder="SSC/HSC, O/A Levels"
                 />
               </div>
 
@@ -288,11 +377,44 @@ function JoinUs() {
                   name="skills"
                   value={formData.skills}
                   onChange={handleChange}
-                  rows="4"
+                  rows="1"
                   placeholder="Photography, writing, organising events, public speaking, design..."
                 />
               </div>
 
+
+              {/* Experience with Other Organizations */}
+
+              <div className="form-group full-width">
+                <label htmlFor="organizationExperience">
+                  Experience of Working with Any Other Organization
+                </label>
+                <textarea
+                  id="organizationExperience"
+                  name="organizationExperience"
+                  value={formData.organizationExperience}
+                  onChange={handleChange}
+                  rows="1"
+                  placeholder="Tell us about any organization you've worked or volunteered with..."
+                />
+              </div>
+
+              {/* One-Hour Impact Question */}
+
+              <div className="form-group full-width">
+                <label htmlFor="oneHourImpact">
+                  If you had only one hour left to make a positive impact on the world, what would you do and why?
+                </label>
+                <textarea
+                  id="oneHourImpact"
+                  name="oneHourImpact"
+                  value={formData.oneHourImpact}
+                  onChange={handleChange}
+                  rows="5"
+                  placeholder="Share what you would do and why..."
+                  required
+                />
+              </div>
 
               {/* Reason */}
 
@@ -348,49 +470,6 @@ function JoinUs() {
                 <small>
                   Please enter the transaction ID from your membership payment.
                 </small>
-              </div>
-
-
-              {/* Social Media */}
-
-              <div className="form-grid">
-
-                {/* Facebook */}
-
-                <div className="form-group">
-                  <label htmlFor="facebook">
-                    Facebook Profile 
-                  </label>
-
-                  <input
-                    type="url"
-                    id="facebook"
-                    name="facebook"
-                    value={formData.facebook}
-                    onChange={handleChange}
-                    placeholder="Your Facebook profile link"
-                    required
-                  />
-                </div>
-
-
-                {/* Instagram */}
-
-                <div className="form-group">
-                  <label htmlFor="instagram">
-                    Instagram Profile
-                  </label>
-
-                  <input
-                    type="url"
-                    id="instagram"
-                    name="instagram"
-                    value={formData.instagram}
-                    onChange={handleChange}
-                    placeholder="Your Instagram profile link"
-                  />
-                </div>
-
               </div>
 
 
