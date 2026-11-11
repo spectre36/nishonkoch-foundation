@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import "../styles/joinUs.css";
 
@@ -146,7 +147,7 @@ function JoinUs() {
 
                 <div className="form-group">
                   <label htmlFor="fullName">
-                    Full Name 
+                    Full Name
                   </label>
 
                   <input
@@ -165,7 +166,7 @@ function JoinUs() {
 
                 <div className="form-group">
                   <label htmlFor="email">
-                    Email Address 
+                    Email Address
                   </label>
 
                   <input
@@ -184,7 +185,7 @@ function JoinUs() {
 
                 <div className="form-group">
                   <label htmlFor="phone">
-                    Phone Number 
+                    Phone Number (Preferably Whatsapp)
                   </label>
 
                   <input
@@ -203,7 +204,7 @@ function JoinUs() {
 
                 <div className="form-group">
                   <label htmlFor="dateOfBirth">
-                    Date of Birth 
+                    Date of Birth
                   </label>
 
                   <input
@@ -302,7 +303,7 @@ function JoinUs() {
 
               <div className="form-group full-width">
                 <label htmlFor="address">
-                 Address 
+                  Address
                 </label>
 
                 <input
@@ -321,7 +322,7 @@ function JoinUs() {
 
               <div className="form-group full-width">
                 <label htmlFor="occupation">
-                 Institution
+                  Institution
                 </label>
 
                 <input
@@ -339,7 +340,7 @@ function JoinUs() {
 
               <div className="form-group full-width">
                 <label htmlFor="institution">
-                 Present Level of Education
+                  Present Level of Education
                 </label>
 
                 <input
@@ -420,7 +421,7 @@ function JoinUs() {
 
               <div className="form-group full-width">
                 <label htmlFor="reason">
-                  Why do you want to join us? 
+                  Why do you want to join us?
                 </label>
 
                 <textarea
@@ -443,8 +444,12 @@ function JoinUs() {
                 <div>
                   <h2>Almost there!</h2>
 
-                  <p>
-                    Theres a 300 Taka registration fee to join Nishonkoch Foundation this includes your official T-shirt and id-card, you need to pay this amount through Bkash send money (01864051508) to confirm your registration.
+                  <p className="registration-description">
+                    There's a <strong>300 Taka registration fee</strong> to join
+                    Nishonkoch Foundation. This includes your official
+                    <strong> T-shirt and ID card</strong>. You need to pay this
+                    amount through <strong>bKash Send Money</strong>
+                    (<strong>01864051508</strong>) to confirm your registration.
                   </p>
                 </div>
               </div>
@@ -454,7 +459,7 @@ function JoinUs() {
 
               <div className="form-group full-width">
                 <label htmlFor="bkashTransactionId">
-                bKash Transaction ID 
+                  bKash Transaction ID
                 </label>
 
                 <input

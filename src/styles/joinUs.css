@@ -1,3 +1,4 @@
+
 /* =========================================
    JOIN US PAGE
 ========================================= */
@@ -137,6 +138,21 @@
 
 .second-section {
   margin-top: 50px;
+}
+
+
+/* =========================================
+   REGISTRATION DESCRIPTION
+========================================= */
+
+.registration-description {
+  color: #777;
+  line-height: 1.7;
+}
+
+.registration-description strong {
+  color: black;
+  font-weight: 700;
 }
 
 
