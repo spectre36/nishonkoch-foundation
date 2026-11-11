@@ -340,7 +340,7 @@ function JoinUs() {
 
               <div className="form-group full-width">
                 <label htmlFor="institution">
-                  Present Level of Education
+                  Current Level of Education
                 </label>
 
                 <input
