@@ -436,46 +436,7 @@ function JoinUs() {
               </div>
 
 
-              {/* Verification */}
 
-              <div className="form-section-title second-section">
-                <span>03</span>
-
-                <div>
-                  <h2>Almost there!</h2>
-
-                  <p className="registration-description">
-                    There's a <strong>300 Taka registration fee</strong> to join
-                    Nishonkoch Foundation. This includes your official
-                    <strong> T-shirt and ID card</strong>. You need to pay this
-                    amount through <strong>bKash Send Money</strong>
-                    (<strong>01864051508</strong>) to confirm your registration.
-                  </p>
-                </div>
-              </div>
-
-
-              {/* bKash Transaction ID */}
-
-              <div className="form-group full-width">
-                <label htmlFor="bkashTransactionId">
-                  bKash Transaction ID
-                </label>
-
-                <input
-                  type="text"
-                  id="bkashTransactionId"
-                  name="bkashTransactionId"
-                  value={formData.bkashTransactionId}
-                  onChange={handleChange}
-                  placeholder="Enter your bKash transaction ID"
-                  required
-                />
-
-                <small>
-                  Please enter the transaction ID from your membership payment.
-                </small>
-              </div>
 
 
               {/* Submit Button */}
